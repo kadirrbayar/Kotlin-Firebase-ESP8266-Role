@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="163dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:text="Lamba Aç"
+        app:layout_constraintEnd_toEndOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="163dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:text="Lamba Kapat"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <EditText
+        android:id="@+id/kapanmaBox"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Kapanma Saati"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/acilmaBox"
+        app:layout_constraintStart_toStartOf="@+id/acilmaBox"
+        app:layout_constraintTop_toBottomOf="@+id/acilmaBox" />
+
+    <EditText
+        android:id="@+id/acilmaBox"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Açılma Saati"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="163dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="30dp"
+        android:text="Otomatik Yap"
+        app:layout_constraintEnd_toEndOf="@+id/kapanmaBox"
+        app:layout_constraintStart_toStartOf="@+id/kapanmaBox"
+        app:layout_constraintTop_toBottomOf="@+id/kapanmaBox" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Lamba Durumu :"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/lambaText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Kapanış Saati :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Açılış Saati :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Otomatik :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/lambaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/otomatikText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/lambaText"
+        app:layout_constraintTop_toBottomOf="@+id/lambaText" />
+
+    <TextView
+        android:id="@+id/acilisText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/otomatikText"
+        app:layout_constraintTop_toBottomOf="@+id/otomatikText" />
+
+    <TextView
+        android:id="@+id/kapanisText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/acilisText"
+        app:layout_constraintTop_toBottomOf="@+id/acilisText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
