@@ -10,7 +10,7 @@ Bu sayede lambayı istediğiniz konumdan açıp kapatabilirsiniz ayrıca otomati
 
 ### Görseller
 
-<p align="center">
+<p align="left">
   <img src="https://telegra.ph/file/ba1fb3df14c2078123c36.png">
   <img src="https://telegra.ph/file/431bb7347db616f4233c3.png">
 </p>
